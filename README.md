@@ -10,8 +10,8 @@ $./simul
 
 $cd statistics\python_code_for_plots
 
-$python plot_acc
+$python plot_acc.py
 
-$python plot_hr
+$python plot_hr.py
 
-$python plot_happy
+$python plot_happy.py
