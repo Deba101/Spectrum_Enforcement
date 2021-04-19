@@ -8,7 +8,7 @@ $./simul
 
 2) For generating plots:
 
-$cd statistics\python_code_for_plots
+$cd statistics/python_code_for_plots
 
 $python plot_acc.py
 
