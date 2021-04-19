@@ -281,13 +281,7 @@ struct vol_qual
 	float qual;
 };
 
-//struct for channels, volunteers and their CMAB ready reputations
-struct channel_volunteer_reputation
-{
-	int channel;
-	int volunteer;
-	float CMAB_reputation;
-};
+
 
 struct volunteer_reputation
 {
@@ -481,17 +475,7 @@ void update_mean_reputation()
 	}
 }
 
-void update_CMAB_ready_reputation(int t)
-{
-	for (int v = 1; v<= volunteer_list.size(); v++)
-	{
-		for (int c = 0; c< channel_count_per_region; c++)
-		{
-			float temp = sqrt((3*log(t))/volunteer_channel_assignment_counter[v][c]);
-			volunteer_channel_reputation_mean_CMAB_ready[v][c] = volunteer_channel_reputation_mean[v][c] + temp;
-		}
-	}
-}
+
 
 void init_volunteer_channel_reputation_mean()
 {
@@ -4819,12 +4803,6 @@ void assign_channels_round_robin(int region, int k, std::map< int, float > sum_h
 	happiness_score_list[region].push_back(sum_happiness[region]);
 }
 
-//Function for CMAB
-
-bool compareByReputation(const struct channel_volunteer_reputation &a, const struct channel_volunteer_reputation &b)
-{
-    return a.CMAB_reputation > b.CMAB_reputation;
-}
 
 
 // ####################################################---------- Function Related to processes ------------------------ #####################################
