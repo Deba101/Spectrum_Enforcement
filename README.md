@@ -1,6 +1,6 @@
 # Spectrum_Enforcement
 
-1) For Running the simulation code, 
+1) For Running the simulation code:
 
 $cd Simulation_code
 
