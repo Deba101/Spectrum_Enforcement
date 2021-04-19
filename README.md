@@ -21,4 +21,4 @@ $python plot_happy.py
 
 Note: The input data in the .py files need to be changed for generating the plots of different experiments. 
 
-Please contact ded59@pitt.edu for more details.
+
