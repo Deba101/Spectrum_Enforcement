@@ -11,7 +11,7 @@ Note: Different volunteer selection algorithm functions (or combinations of it) 
  
 2) For generating plots:
 
-$cd statistics/python_code_for_plots
+$cd python_code_for_plots
 
 $python plot_acc.py
 
@@ -19,6 +19,6 @@ $python plot_hr.py
 
 $python plot_happy.py
 
-Note: The input data in the .py files need to be changed for generating the plots of different experiments. 
+Note: The input data in the .py files need to be changed for generating the plots of the different experiments. 
 
 
